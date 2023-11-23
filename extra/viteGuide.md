@@ -56,7 +56,14 @@ SETUP GIT
    2. Copy `git branch -M main` and run it
    3. Copy `git push -u origin main` and it as well
 9. Push modified files:
-   Option 1. Using integrated source control of VScode: 1. Click on Source Control icon on the left 2. Write commit message in the message input on the top 3. Click on Commit
+   1. Option 1. Using integrated source control of VScode:
+      1. Click on Source Control icon on the left
+      2. Write commit message in the message input on the top
+      3. Click on Commit
+      4. Click on Sync Changes
+   2. Option 2. Using git commands
+      1. `git add .` (add all)
+      2. `git commit -m 'Your message'`
 
 ==============================================
 
