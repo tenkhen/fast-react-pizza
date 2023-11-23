@@ -52,8 +52,11 @@ SETUP GIT
    3. Set Private (my preference)
    4. Click on Create repository button
 8. Push:
-   1. Copy first line under (push an existing repository...) `git remote add origin https://github.com/{your-github-name}/fast-react-pizza.git` and run it in VScode built-in terminal
-   1.
+   1. Copy `git remote add origin https://github.com/your-github-name/fast-react-pizza.git` and run it in VScode built-in terminal. (Don't forget to replace your github name)
+   2. Copy `git branch -M main` and run it
+   3. Copy `git push -u origin main` and it as well
+9. Push modified files:
+   Option 1. Using integrated source control of VScode: 1. Click on Source Control icon on the left 2. Write commit message in the message input on the top 3. Click on Commit
 
 ==============================================
 
