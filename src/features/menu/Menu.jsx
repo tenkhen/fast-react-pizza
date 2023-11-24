@@ -1,14 +1,16 @@
-import { useLoaderData } from 'react-router-dom';
-import { getMenu } from '../../services/apiRestaurant';
-import MenuItem from './MenuItem';
+import { useLoaderData } from "react-router-dom";
+import { getMenu } from "../../services/apiRestaurant";
+import Meta from "../../components/Meta";
+import MenuItem from "./MenuItem";
 
 const Menu = () => {
   // useLoaderData in React Router 6 is a powerful tool that allows you to fetch data for your routes and make it available to your components before they are rendered. It's called RENDER AS FETCH
   const menu = useLoaderData();
 
   return (
-    <ul>
-      {menu.map(pizza => (
+    <ul className="divide-y divide-stone-200 px-2">
+      <Meta title="Fast React Pizza - Menu" />
+      {menu.map((pizza) => (
         <MenuItem pizza={pizza} key={pizza.id} />
       ))}
     </ul>

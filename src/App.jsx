@@ -1,13 +1,14 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Home from './ui/Home';
-import Menu, { loader as menuLoader } from './features/menu/Menu';
-import Cart from './features/cart/Cart';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import Home from "./ui/Home";
+import Menu, { loader as menuLoader } from "./features/menu/Menu";
+import Cart from "./features/cart/Cart";
 import CreateOrder, {
   action as createOrderAction,
-} from './features/order/CreateOrder';
-import Order, { loader as orderLoader } from './features/order/Order';
-import AppLayout from './ui/AppLayout';
-import Error from './ui/Error';
+} from "./features/order/CreateOrder";
+import Order, { loader as orderLoader } from "./features/order/Order";
+import AppLayout from "./ui/AppLayout";
+import Error from "./ui/Error";
 
 // New way to create routes. We pass array of objects and each object is a route
 const router = createBrowserRouter([
@@ -18,24 +19,24 @@ const router = createBrowserRouter([
     errorElement: <Error />,
 
     children: [
-      { path: '/', element: <Home /> },
+      { path: "/", element: <Home /> },
       {
-        path: '/menu',
+        path: "/menu",
         element: <Menu />,
         // React Router Loaders are to read data
         loader: menuLoader,
         errorElement: <Error />,
       },
-      { path: '/cart', element: <Cart /> },
+      { path: "/cart", element: <Cart /> },
       {
-        path: '/order/new',
+        path: "/order/new",
         element: <CreateOrder />,
         // React Router Actions are to write/mutate data
         // Here we connect '/order/new' url to the action
         action: createOrderAction,
       },
       {
-        path: '/order/:orderId',
+        path: "/order/:orderId",
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
@@ -45,7 +46,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />;
+    </HelmetProvider>
+  );
 };
 
 export default App;

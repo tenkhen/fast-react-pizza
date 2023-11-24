@@ -1,8 +1,10 @@
 import CreateUser from "../features/user/CreateUser";
+import Meta from "../components/Meta";
 
 function Home() {
   return (
     <div className="my-10 px-4 text-center sm:my-16">
+      <Meta />
       <h1 className="mb-8 text-xl font-semibold">
         The best pizza.
         <br />

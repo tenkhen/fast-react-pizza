@@ -101,6 +101,13 @@ TAILWIND CSS
    },
    }
 
+   To change default font, add following code in theme in railwind.config.js
+   fontFamily: {
+   sans: "Roboto Mono, monospace",
+   }
+
+   To add custom colors, fontSize etc, add in extend
+
 4. Configure index.css
    Add follow three lines at the beginning in the index.css
    @tailwind base;
