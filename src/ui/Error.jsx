@@ -1,5 +1,6 @@
 import { useNavigate, useRouteError } from "react-router-dom";
 import LinkButton from "./LinkButton";
+import Meta from "../components/Meta";
 
 function Error() {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ function Error() {
 
   return (
     <div>
+      <Meta title="Fast React Pizza - Error" />
       <h1>Something went wrong 😢</h1>
       <p>{error.data || error.message}</p>
       {/* navigate(-1) will take us to the previous page */}

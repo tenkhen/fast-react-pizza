@@ -126,3 +126,9 @@ TAILWIND CSS
    `npm install -D prettier prettier-plugin-tailwindcss`
 7. Create prettier.config.cjs and add following code in it
    module.exports = { plugins: ['prettier-plugin-tailwindcss'], }
+
+==============================================
+
+INSTALLING REACT-REDUX AND REDUX-TOOLKIT
+
+1. `npm i @reduxjs/toolkit react-redux`

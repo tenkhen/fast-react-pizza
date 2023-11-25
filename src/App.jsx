@@ -1,5 +1,4 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 import Home from "./ui/Home";
 import Menu, { loader as menuLoader } from "./features/menu/Menu";
 import Cart from "./features/cart/Cart";
@@ -46,11 +45,7 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return (
-    <HelmetProvider>
-      <RouterProvider router={router} />;
-    </HelmetProvider>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
