@@ -31,7 +31,8 @@ INSTALLING AND CONFIGURE ESLINT
 CLEAN UP FILES AND FOLDERS
 
 1. Delete App.css, index.css and assets folder.
-2. Delete "import './index.css'" from main.jsx
+2. Delete "import './index.css'" in main.jsx
+3. Delete all contents in App.jsx
 
 ==============================================
 

@@ -45,7 +45,7 @@ function CreateOrder() {
   if (cart.length === 0) return <EmptyCart />;
 
   return (
-    <div className="px-4 py-6">
+    <div className="mt-10 rounded-xl bg-gradient-to-br from-orange-100/70 to-orange-300/70 px-4 py-6">
       <Meta title="Fast React Pizza - Place Order" />
       <h2 className="mb-8 text-xl font-semibold">Ready to order? Let's go!</h2>
 
@@ -109,7 +109,7 @@ function CreateOrder() {
 
         <div className="mb-12 flex items-center gap-5">
           <input
-            className="h-6 w-6 accent-yellow-400 focus:outline-none focus:ring focus:ring-yellow-400 focus:ring-offset-2"
+            className="h-6 w-6 accent-green-800 focus:outline-none focus:ring focus:ring-green-400 focus:ring-offset-2"
             type="checkbox"
             name="priority"
             id="priority"

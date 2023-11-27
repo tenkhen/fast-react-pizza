@@ -8,7 +8,7 @@ const Menu = () => {
   const menu = useLoaderData();
 
   return (
-    <ul className="divide-y divide-stone-200 px-2">
+    <ul className="m-10 grid grid-cols-3 gap-6">
       <Meta title="Fast React Pizza - Menu" />
       {menu.map((pizza) => (
         <MenuItem pizza={pizza} key={pizza.id} />

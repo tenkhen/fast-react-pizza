@@ -36,7 +36,7 @@ function Order() {
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
   return (
-    <div className="space-y-8 px-4 py-6">
+    <div className="mt-10 space-y-8 rounded-xl bg-gradient-to-br from-orange-100/70 to-orange-300/70 px-4 py-4">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <Meta title="Fast React Pizza - Your Order" />
         <h2 className="text-xl font-semibold">Order #{id} status</h2>
@@ -47,7 +47,7 @@ function Order() {
               Priority
             </span>
           )}
-          <span className="rounded-full bg-green-500 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-green-50">
+          <span className="rounded-full bg-green-600 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-green-50">
             {status} order
           </span>
         </div>
@@ -77,7 +77,7 @@ function Order() {
         ))}
       </ul>
 
-      <div className="space-y-2 bg-stone-200 px-6 py-5">
+      <div className="space-y-2 rounded-b-lg bg-stone-200 px-6 py-5">
         <p className="text-sm font-medium text-stone-600">
           Price pizza: {formatCurrency(orderPrice)}
         </p>

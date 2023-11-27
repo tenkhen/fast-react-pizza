@@ -10,8 +10,8 @@ function CartOverview() {
   if (totalItemQty === 0) return null;
 
   return (
-    <div className="flex items-center justify-between bg-stone-800 p-4 text-sm uppercase text-stone-200 sm:px-6 md:text-base">
-      <p className="text space-x-4 font-semibold text-stone-300 sm:space-x-6">
+    <div className="flex items-center justify-between bg-green-900 p-4 text-sm uppercase text-green-200 sm:px-6 md:text-base">
+      <p className="text space-x-4 font-semibold sm:space-x-6">
         <span>{totalItemQty} Pizzas</span>
         <span>{formatCurrency(totalPrice)}</span>
       </p>

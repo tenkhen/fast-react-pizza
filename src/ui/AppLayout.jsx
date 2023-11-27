@@ -19,7 +19,7 @@ const AppLayout = () => {
       <Header />
 
       <div className="overflow-scroll">
-        <main className="mx-auto max-w-3xl">
+        <main className="mx-auto max-w-4xl">
           {/* Outlet in the parent route will render it's children routes in parent route */}
           <Outlet />
         </main>
